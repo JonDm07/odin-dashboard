@@ -1,0 +1,48 @@
+html,
+body {
+    margin: 0px;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+    height: 100vh;
+}
+
+.container > div {
+    border: solid black 1px;
+}
+
+.sidebar {
+    grid-row: span 2;
+    display: grid;
+    grid-template-rows: 1fr 4fr 4fr;
+}
+
+.sidebar > div {
+    border: dotted black 1px;
+}
+
+.sidebar > div > ul > li {
+    list-style: none;
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+}
+
+.header > div {
+    border: dotted black 1px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+}
+
+.main > div {
+    border: dotted black 1px;
+}
