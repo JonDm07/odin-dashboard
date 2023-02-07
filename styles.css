@@ -19,6 +19,25 @@ body {
     grid-row: span 2;
     display: grid;
     grid-template-rows: 1fr 4fr 4fr;
+    background-color: #FFE0B5;
+}
+
+.sidebar > .dashboard {
+    display: grid;
+    grid-template-columns: 40px 70%;
+    font-size: 30px;
+    gap: 20px;
+}
+
+.sidebar > .dashboard::before {
+    display: inline-block;
+    content: "";
+    height: 50px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0px;
+    background-image: url(img/view-dashboard-outline.svg);
 }
 
 .sidebar > div {
@@ -27,7 +46,78 @@ body {
 
 .sidebar > div > ul > li {
     list-style: none;
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+    gap: 10px
+    ;
 }
+
+.sidebar-list {
+    padding: 20px;
+}
+
+.sidebar-list li::before {
+    display: inline-block;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0px;
+}
+
+
+.sidebar-list :nth-child(1)::before {
+    background-image: url(img/home-outline.svg);
+}
+
+.sidebar-list :nth-child(2)::before {
+    background-image: url(img/account-outline.svg);
+}
+
+.sidebar-list :nth-child(3)::before {
+    background-image: url(img/message-outline.svg);
+}
+
+.sidebar-list :nth-child(4)::before {
+    background-image: url(img/history.svg);
+}
+
+.sidebar-list :nth-child(5)::before {
+    background-image: url(img/file-outline.svg);
+}
+
+.sidebar-list :nth-child(6)::before {
+    background-image: url(img/account-group-outline.svg);
+}
+
+.sidebar-list-b {
+    padding: 20px;
+}
+
+.sidebar-list-b li::before {
+    display: inline-block;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0px;
+}
+
+
+.sidebar-list-b :nth-child(1)::before {
+    background-image: url(img/cog-outline.svg);
+}
+
+.sidebar-list-b :nth-child(2)::before {
+    background-image: url(img/face-agent.svg);
+} 
+
+.sidebar-list-b :nth-child(3)::before {
+    background-image: url(img/shield-outline.svg);
+} 
 
 .header {
     display: grid;
