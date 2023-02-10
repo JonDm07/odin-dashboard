@@ -234,6 +234,7 @@ body {
     background-color: #d4d4d4;
     justify-self: center;
     border: solid #d4d4d4 1px;
+    font-weight: bold;
 }
 
 
@@ -337,22 +338,27 @@ body {
 .main-announcements {
     background-color: #f4f4f5;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: minmax(20px, 40px) 1fr 1fr;
     grid-column: -2 / -1;
     grid-row: 1 / -1;
+    padding: 15px;
+    padding-left: 0px;
+    gap: 15px;
+}
 
+.main-announcements > p {
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    align-self: end;
 }
 
 .announcements {
     display: grid;
-    grid-template-rows: 0.5fr 5fr;
+    grid-template-rows: 1fr;
     margin-right: 10px;
     background-color: #f4f4f5;
-    padding: 15px;
-}
-
-.announcements > p {
-    font-size: 20px;
+    grid-row: 2 / 3;
 }
 
 .announcements > div {
@@ -382,7 +388,7 @@ body {
     grid-template-rows: 0.5fr 5fr;
     margin-right: 10px;
     background-color: #f4f4f5;
-    padding: 15px;
+    grid-row: -2 / -1;
 }
 
 .trending > p {
