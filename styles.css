@@ -1,7 +1,18 @@
+@font-face {
+    font-family: playfair;
+    src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+
+
 html,
 body {
     margin: 0px;
 
+}
+
+* {
+    font-family: playfair;
 }
 
 .container {
@@ -150,10 +161,20 @@ body {
     background-image: url(img/magnify.svg)
 }
 
-.header-one > span:nth-child(2) {
+.header-one > textarea {
     background-color: rgb(228, 228, 228);
     border-radius: 10px;
-    justify-self: stretch
+    justify-self: stretch;
+    border: solid rgb(228, 228, 228) 1px;
+    resize: none;
+    overflow: hidden;
+    padding-left: 10px;
+    outline: none;
+}
+
+.header-one > textarea:focus,
+.header-one > textarea:hover {
+    border: solid black 1px;
 }
 
 .header-one > span:nth-child(3) {
@@ -212,6 +233,12 @@ body {
     border: none;
     background-color: #d4d4d4;
     justify-self: center;
+    border: solid #d4d4d4 1px;
+}
+
+
+.header-two > button:hover {
+    border: solid black 1px;
 }
 
 .projects {
@@ -227,7 +254,7 @@ body {
     grid-column: span 2;
     margin: 0px;
     padding: 0px;
-    font-size: 24px;
+    font-size: 20px;
     align-self: end;
 }
 
@@ -324,6 +351,10 @@ body {
     padding: 15px;
 }
 
+.announcements > p {
+    font-size: 20px;
+}
+
 .announcements > div {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -354,6 +385,10 @@ body {
     padding: 15px;
 }
 
+.trending > p {
+    font-size: 20px;
+}
+
 .trending-box {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -367,19 +402,42 @@ body {
     grid-template-columns: 0.5fr 4fr;
     gap: 10px;
     align-items: center;
+    border-radius: 10px;
+    border: solid white 1px;
 }
+
+.trending-box > div:hover {
+    border: solid black 1px;
+}
+
 
 .trending-img {
     content: "";
     border-radius: 50%;
     height: 45px;
     width: 45px;
-    background-image: url(img/pexels-steve-johnson-1145720.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     align-self: center;
     margin-left: 20px;
 }
+
+.one {
+    background-image: url(img/pexels-flo-dahm-699466.jpg);
+}
+
+.two {
+    background-image: url(img/pexels-alexander-grey-1209843.jpg);
+}
+
+.three {
+    background-image: url(img/pexels-steve-johnson-1145720.jpg);
+}
+
+.four {
+    background-image: url(img/pexels-chait-goli-1918290.jpg);
+}
+
 
 .trending-img ~ div > p {
     margin: 0px;
